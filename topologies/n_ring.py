@@ -6,6 +6,6 @@ def positive_mod(x, mod):
         m += mod
     return m
 
-
-for i in range(n):
-    print(f"{i},{positive_mod(i-1, n)},{positive_mod(i+1, n)}")
+if (__name__ == "__main__"):
+    for i in range(n):
+        print(f"{i},{positive_mod(i-1, n)},{positive_mod(i+1, n)}")
