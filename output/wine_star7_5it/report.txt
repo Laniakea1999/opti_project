@@ -1,0 +1,112 @@
+n_runs:	5
+
+[Iteration 0]
+
+epochs:		1
+
+Accuracy:		0.9438
+
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.98        28
+           1       1.00      0.84      0.91        31
+           2       0.88      1.00      0.94        30
+
+    accuracy                           0.94        89
+   macro avg       0.95      0.95      0.94        89
+weighted avg       0.95      0.94      0.94        89
+
+[[28  0  0]
+ [ 1 26  4]
+ [ 0  0 30]]
+
+
+[Iteration 1]
+
+epochs:		3
+
+Accuracy:		0.9326
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.89      0.93        28
+           1       0.92      0.92      0.92        38
+           2       0.92      1.00      0.96        23
+
+    accuracy                           0.93        89
+   macro avg       0.93      0.94      0.94        89
+weighted avg       0.93      0.93      0.93        89
+
+[[25  3  0]
+ [ 1 35  2]
+ [ 0  0 23]]
+
+
+[Iteration 2]
+
+epochs:		2
+
+Accuracy:		0.9326
+
+              precision    recall  f1-score   support
+
+           0       0.92      1.00      0.96        33
+           1       1.00      0.82      0.90        34
+           2       0.88      1.00      0.94        22
+
+    accuracy                           0.93        89
+   macro avg       0.93      0.94      0.93        89
+weighted avg       0.94      0.93      0.93        89
+
+[[33  0  0]
+ [ 3 28  3]
+ [ 0  0 22]]
+
+
+[Iteration 3]
+
+epochs:		6
+
+Accuracy:		0.9213
+
+              precision    recall  f1-score   support
+
+           0       0.94      0.94      0.94        32
+           1       0.94      0.86      0.90        36
+           2       0.88      1.00      0.93        21
+
+    accuracy                           0.92        89
+   macro avg       0.92      0.93      0.92        89
+weighted avg       0.92      0.92      0.92        89
+
+[[30  2  0]
+ [ 2 31  3]
+ [ 0  0 21]]
+
+
+[Iteration 4]
+
+epochs:		1
+
+Accuracy:		0.9101
+
+              precision    recall  f1-score   support
+
+           0       1.00      0.89      0.94        27
+           1       0.90      0.84      0.87        31
+           2       0.86      1.00      0.93        31
+
+    accuracy                           0.91        89
+   macro avg       0.92      0.91      0.91        89
+weighted avg       0.92      0.91      0.91        89
+
+[[24  3  0]
+ [ 0 26  5]
+ [ 0  0 31]]
+
+
+
+
+
+Avg accuracy:	0.9281	(stddev: 0.0115)
+Avg epochs:	2.6	(stddev: 1.8547)

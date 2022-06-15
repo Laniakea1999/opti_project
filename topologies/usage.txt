@@ -1,8 +1,0 @@
-Scripts print to stdout, so their output can be either piped to a 
-file or another script using:
-
-python script.py > file.txt
-
-or
-
-program < generated_file.txt (if the program reads from stdin)
