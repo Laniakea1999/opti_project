@@ -2,111 +2,111 @@ n_runs:	5
 
 [Iteration 0]
 
-epochs:		1
+epochs:		4
 
-Accuracy:		0.9551
+Accuracy:		0.9815
 
               precision    recall  f1-score   support
 
-           0       0.93      0.97      0.95        29
-           1       0.97      0.92      0.94        37
-           2       0.96      1.00      0.98        23
+           0       0.96      1.00      0.98        23
+           1       1.00      0.95      0.97        20
+           2       1.00      1.00      1.00        11
 
-    accuracy                           0.96        89
-   macro avg       0.95      0.96      0.96        89
-weighted avg       0.96      0.96      0.95        89
+    accuracy                           0.98        54
+   macro avg       0.99      0.98      0.98        54
+weighted avg       0.98      0.98      0.98        54
 
-[[28  1  0]
- [ 2 34  1]
- [ 0  0 23]]
+[[23  0  0]
+ [ 1 19  0]
+ [ 0  0 11]]
 
 
 [Iteration 1]
 
-epochs:		4
+epochs:		1
 
-Accuracy:		0.9663
+Accuracy:		0.9259
 
               precision    recall  f1-score   support
 
-           0       0.94      1.00      0.97        32
-           1       1.00      0.89      0.94        28
-           2       0.97      1.00      0.98        29
+           0       0.83      1.00      0.91        15
+           1       1.00      0.83      0.91        24
+           2       0.94      1.00      0.97        15
 
-    accuracy                           0.97        89
-   macro avg       0.97      0.96      0.97        89
-weighted avg       0.97      0.97      0.97        89
+    accuracy                           0.93        54
+   macro avg       0.92      0.94      0.93        54
+weighted avg       0.94      0.93      0.93        54
 
-[[32  0  0]
- [ 2 25  1]
- [ 0  0 29]]
+[[15  0  0]
+ [ 3 20  1]
+ [ 0  0 15]]
 
 
 [Iteration 2]
 
-epochs:		6
+epochs:		1
 
-Accuracy:		0.9101
+Accuracy:		0.9444
 
               precision    recall  f1-score   support
 
-           0       0.97      1.00      0.98        29
-           1       1.00      0.78      0.88        36
-           2       0.77      1.00      0.87        24
+           0       0.95      1.00      0.97        18
+           1       0.89      0.94      0.92        18
+           2       1.00      0.89      0.94        18
 
-    accuracy                           0.91        89
-   macro avg       0.91      0.93      0.91        89
-weighted avg       0.93      0.91      0.91        89
+    accuracy                           0.94        54
+   macro avg       0.95      0.94      0.94        54
+weighted avg       0.95      0.94      0.94        54
 
-[[29  0  0]
- [ 1 28  7]
- [ 0  0 24]]
+[[18  0  0]
+ [ 1 17  0]
+ [ 0  2 16]]
 
 
 [Iteration 3]
 
-epochs:		1
+epochs:		2
 
-Accuracy:		0.9213
+Accuracy:		0.9630
 
               precision    recall  f1-score   support
 
-           0       0.89      0.93      0.91        27
-           1       0.94      0.85      0.89        34
-           2       0.93      1.00      0.97        28
+           0       0.95      1.00      0.97        18
+           1       1.00      0.89      0.94        19
+           2       0.94      1.00      0.97        17
 
-    accuracy                           0.92        89
-   macro avg       0.92      0.93      0.92        89
-weighted avg       0.92      0.92      0.92        89
+    accuracy                           0.96        54
+   macro avg       0.96      0.96      0.96        54
+weighted avg       0.96      0.96      0.96        54
 
-[[25  2  0]
- [ 3 29  2]
- [ 0  0 28]]
+[[18  0  0]
+ [ 1 17  1]
+ [ 0  0 17]]
 
 
 [Iteration 4]
 
-epochs:		2
+epochs:		1
 
-Accuracy:		0.9213
+Accuracy:		0.9630
 
               precision    recall  f1-score   support
 
-           0       0.94      1.00      0.97        30
-           1       1.00      0.79      0.89        34
-           2       0.83      1.00      0.91        25
+           0       1.00      0.87      0.93        15
+           1       0.92      1.00      0.96        22
+           2       1.00      1.00      1.00        17
 
-    accuracy                           0.92        89
-   macro avg       0.92      0.93      0.92        89
-weighted avg       0.93      0.92      0.92        89
+    accuracy                           0.96        54
+   macro avg       0.97      0.96      0.96        54
+weighted avg       0.97      0.96      0.96        54
 
-[[30  0  0]
- [ 2 27  5]
- [ 0  0 25]]
-
-
+[[13  2  0]
+ [ 0 22  0]
+ [ 0  0 17]]
 
 
 
-Avg accuracy:	0.9348	(stddev: 0.0218)
-Avg epochs:	2.8	(stddev: 1.9391)
+
+
+Test size:	0.3	(~20 train samples per node)Avg accuracy:	0.9556	(stddev: 0.0189)
+Avg epochs:	1.8	(stddev: 1.1662)

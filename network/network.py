@@ -24,8 +24,11 @@ class Network():
         self.nodes = nodes
         self.links = links
 
+        # For stat calculations 
         self.n_iter = 0
-
+        self.best_losses = []
+        self.worst_losses = []
+        self.avg_losses = []
 
     def singleton():
         """
@@ -151,6 +154,9 @@ class Network():
                 pbar.update(1)
                 i += 1
                 loss, _ = self.get_best_candidate()
+                self.best_losses.append(loss)
+                self.worst_losses.append(np.max([n.loss for n in self.nodes.values()]))
+                self.avg_losses.append(np.average([n.loss for n in self.nodes.values()]))
                 converged = loss < threshold
                 
         self.n_iter = i

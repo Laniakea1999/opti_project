@@ -52,6 +52,25 @@ def draw_confusion_matrix(confusion_matrix):
     ax.set_ylabel('Actual Values ')
     return ax.get_figure()
 
+def plot_losses(training_losses, color='blue', marker='+'):
+    plt.plot(training_losses, color=color, marker=marker, linewidth=1)
+    plt.xlabel('Iterations')
+    plt.ylabel('Loss')
+
+    n = 1
+    n_losses = len(training_losses)
+    if (n_losses > 200):
+        n = 100
+    elif (n_losses > 100):
+        n = 50
+    elif (n_losses > 50):
+        n = 25
+    elif (n_losses > 20):
+        n = 10
+
+    plt.xticks(range(len(training_losses))[::n])
+    return plt.gcf()
+
 def print_error(msg):
     print(u"\u001b[41m\u001b[1m\u001b[37m ERROR: \u001b[0m {}\n".format(msg))
 
